@@ -45,14 +45,54 @@ const questions = {
         { question: "Which of the following is the correct way to import a package in Java?", options: ["A. import java.util.*;", "B. package java.util;", "C. use java.util;", "D. import java.util"], answer: "A. import java.util.*;" },
         { question: "Which of the following is the correct syntax for a for-each loop in Java?", options: ["A. for (type var : array) { }", "B. for (var : array) { }", "C. foreach (var : array) { }", "D. for (type var in array) { }"], answer: "A. for (type var : array) { }" }
     ],
+    HTML: [
+        { question: "What does HTML stand for?", options: ["A. Hyperlinks and Text Markup Language", "B. Hyper Text Markup Language", "C. Home Tool Markup Language", "D. Hyper Tool Markup Language"], answer: "B. Hyper Text Markup Language" },
+        { question: "Which HTML tag is used to define an internal style sheet?", options: ["A. <css>", "B. <script>", "C. <style>", "D. <stylesheet>"], answer: "C. <style>" },
+        { question: "What is the correct HTML element for the largest heading?", options: ["A. <head>", "B. <h1>", "C. <header>", "D. <h6>"], answer: "B. <h1>" },
+        { question: "Which HTML element is used to create a hyperlink?", options: ["A. <a>", "B. <link>", "C. <href>", "D. <hyperlink>"], answer: "A. <a>" },
+        { question: "What is the correct way to add an image in HTML?", options: ["A. <img src='image.jpg'>", "B. <image src='image.jpg'>", "C. <img link='image.jpg'>", "D. <picture src='image.jpg'>"], answer: "A. <img src='image.jpg'>" },
+        { question: "How can you create an unordered list in HTML?", options: ["A. <ul>", "B. <ol>", "C. <li>", "D. <list>"], answer: "A. <ul>" },
+        { question: "Which tag is used to create a checkbox in HTML?", options: ["A. <checkbox>", "B. <check>", "C. <input type='checkbox'>", "D. <box>"], answer: "C. <input type='checkbox'>" },
+        { question: "What is the purpose of the <br> tag in HTML?", options: ["A. To add a line break", "B. To make text bold", "C. To create a border", "D. To insert a blank space"], answer: "A. To add a line break" },
+        { question: "Which attribute is used to specify the destination of a hyperlink?", options: ["A. href", "B. src", "C. link", "D. url"], answer: "A. href" },
+        { question: "How do you insert a comment in HTML?", options: ["A. <!-- This is a comment -->", "B. // This is a comment", "C. /* This is a comment */", "D. <comment> This is a comment </comment>"], answer: "A. <!-- This is a comment -->" }
+    ],
     CSS: [
         { question: "What does the 'float' property do in CSS?", options: ["A. It floats the element to the left or right", "B. It floats the background color", "C. It aligns text to the left", "D. It moves the element up or down"], answer: "A. It floats the element to the left or right" },
         { question: "How do you change the background color of an element in CSS?", options: ["A. background-color: red;", "B. color: red;", "C. background: red;", "D. Both A and C"], answer: "D. Both A and C" },
         { question: "What does 'position: absolute' do in CSS?", options: ["A. Positions an element relative to its nearest positioned ancestor", "B. Positions an element in the top-left corner", "C. Positions an element relative to the screen", "D. Positions an element at the bottom"], answer: "A. Positions an element relative to its nearest positioned ancestor" },
         { question: "How do you select an element with a class in CSS?", options: ["A. #class", "B. .class", "C. *class", "D. class"], answer: "B. .class" },
         { question: "Which property is used to change the font of an element in CSS?", options: ["A. font-family", "B. font-size", "C. font-style", "D. font"], answer: "A. font-family" }
-    ]
+    ],
+    JavaScript: [
+        { question: "Which type of JavaScript language is JavaScript?", options: ["A. Object-Oriented", "B. Object-Based", "C. Assembly-language", "D. High-level"], answer: "B. Object-Based" },
+        { question: "Which method is used to print messages in the browser’s console?", options: ["A. console.print()", "B. console.output()", "C. console.log()", "D. console.write()"], answer: "C. console.log()" },
+        { question: "Which of the following keywords is used to define a variable in JavaScript?", options: ["A. var", "B. let", "C. const", "D. All of the above"], answer: "D. All of the above" },
+        { question: "What is the correct way to write an array in JavaScript?", options: [
+            "A. var colors = 'red', 'green', 'blue';", 
+            "B. var colors = ['red', 'green', 'blue'];", 
+            "C. var colors = (1:'red', 2:'green', 3:'blue');", 
+            "D. var colors = '1=red, 2=green, 3=blue';"
+        ], answer: "B. var colors = ['red', 'green', 'blue'];" },
+        { question: "What will `typeof null` return in JavaScript?", options: ["A. 'null'", "B. 'undefined'", "C. 'object'", "D. 'number'"], answer: "C. 'object'" },
+        { question: "What does the `isNaN()` function do in JavaScript?", options: [
+            "A. Checks if a value is not a number", 
+            "B. Checks if a value is null", 
+            "C. Checks if a value is undefined", 
+            "D. Checks if a value is NaN"
+        ], answer: "A. Checks if a value is not a number" },
+        { question: "Which of the following methods can be used to convert JSON data to a JavaScript object?", options: ["A. JSON.stringify()", "B. JSON.parse()", "C. JSON.objectify()", "D. JSON.convert()"], answer: "B. JSON.parse()" },
+        { question: "Which symbol is used to add comments in JavaScript?", options: ["A. //", "B. <!-- -->", "C. #", "D. /* */"], answer: "A. //" },
+        { question: "What does the `===` operator do in JavaScript?", options: [
+            "A. Compares only values", 
+            "B. Compares values and types", 
+            "C. Assigns a value", 
+            "D. Compares strings"
+        ], answer: "B. Compares values and types" },
+        { question: "What will `console.log(1 + '2');` output in JavaScript?", options: ["A. 12", "B. 3", "C. Error", "D. Undefined"], answer: "A. 12" }
+    ],
 };
+       
 
 
 
