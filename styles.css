@@ -1,0 +1,435 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #2a2a2a;
+    color: #ffffff;
+    line-height: 1.6;
+    
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    justify-content: right; 
+
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center; 
+   
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #5acd79;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute; /* Allows precise positioning */
+    top: 10px; /* Distance from the top of the container */
+    left: 80px; /* Distance from the left of the container */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+
+/* Navbar Links Style */
+.navbar ul li a {
+    text-decoration: underline; /* Always display underline */
+    color: #fff; /* White color for the text */
+    font-size: 1rem;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Change color on hover */
+.navbar ul li a:hover {
+    color: #2980b9; /* Blue color on hover */
+}
+
+
+.profile-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2980b9; /* Default background color */
+    border: none; /* Removes border */
+    display: flex; /* Centers content */
+    justify-content: center; /* Horizontally centers text */
+    align-items: center; /* Vertically centers text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5rem; /* Text size */
+    color: #fff; /* Text color */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.profile-btn:hover {
+    background-color: #555; /* Darker background on hover */
+    transform: scale(1.1); /* Enlarges the button slightly */
+}
+
+
+
+/* Text that will appear when the button is clicked */
+#platform-text {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Hero Section */
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    overflow: hidden; /* To keep rounded edges */
+    background-color: #333; /* Dark background for the search bar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    width: 400px; /* Increased width for better visibility */
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 30px 0 0 30px; /* Rounded left corners */
+}
+
+.search-bar button {
+    background-color: #888;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0 30px 30px 0; /* Rounded right corners */
+    color: #000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+/* Button Hover Effect */
+.search-bar button:hover {
+    background-color: #888;
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+
+
+.search-bar input::placeholder {
+    color: #ccc;
+}
+
+
+.bottom-right-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #5acd79;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bottom-left-text {
+    position: fixed; /* Fixes the text position relative to the browser window */
+    bottom: 10px; /* Positions the text 10px from the bottom */
+    left: 10px; /* Positions the text 10px from the right */
+    text-decoration: underline; /* Underlines the text */
+    font-size: 30px; /* Sets the font size */
+    color: white; /* Text color */
+}
+.bottom-left-button:hover {
+    background-color: darkgrey;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures images wrap to the next row */
+    justify-content: flex-start; /* Aligns images to the left */
+    gap: 20px; /* Adds space between the images */
+    margin-top: 20px; /* Adds space from the top of the container */
+}
+
+/* Style for each image */
+.image-container img {
+    width: 390px; /* Adjusts image width */
+    height: 250px; /* Adjusts image height */
+    object-fit: cover; /* Ensures the image covers the given width/height */
+    border-radius: 8px; /* Optional: Adds rounded corners to the images */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: fixed; /* Keeps the image static while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretches the image to fit the full width */
+    height: 5%; /* Stretches the image to fit the full height */
+    background-image: url('study\ website\ image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Scales the image proportionally to cover the area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+
+.content {
+    position: relative; /* Ensures content is layered above the background */
+    text-align: left;
+    color: blue;
+    padding: 0px;
+    
+    background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent overlay for readability */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the button container */
+.image-button {
+    position: absolute; /* Ensures the button is positioned relative to the page */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border: none; /* Removes default border */
+    background: none; /* Removes background color */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Styling for the round image */
+.image-button img {
+    width: 100%; /* Makes the image fill the button */
+    height: 100%; /* Ensures image height matches button size */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits within the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for effect */
+}
+
+
+
+.rounded-image {
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    top: 80px; /* Distance from the top */
+    right: 15px; /* Distance from the right */
+}
+.rounded-image1{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    top: 145px; /* Distance from the top */
+    right: 200px; /* Distance from the right */
+}
+.rounded-image2{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    top: 240px; /* Distance from the top */
+    right: 15px; /* Distance from the right */
+}
+.rounded-image3{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    top: 360px; /* Distance from the top */
+    right: 200px; /* Distance from the right */
+}
+.rounded-image4{
+    width: 130px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+     /* Distance from the top */
+    top:440px;
+    right: 20px; /* Distance from the right */
+}
+.rounded-image5{
+    width: 140px; /* Set the desired width of the image */
+    height: 130px; /* Set the desired height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for effect */
+    position: absolute; /* Allows precise placement */
+    bottom: 20px; /* Distance from the top */
+    right: 200px; /* Distance from the right */
+}
+/* Responsive container */
+.responsive-container {
+    width: 100%; /* Take up the full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    max-width: 100%; /* No max-width, allow flexibility */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Responsive image */
+.responsive-image {
+    width: 100%; /* Makes the image fill the container */
+    height: 100%; /* Makes the image fill the full height */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    object-position: center center; /* Centers the image within the container */
+    display: block; /* Ensures no extra spacing below the image */
+}
+/* About Us Section */
+.about-us {
+    position: absolute;
+    top: 20%; /* Position from the top of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; /* White text color */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    width: 80%; /* You can adjust the width */
+}
+
+/* Heading Style */
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph Style */
+.about-us p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Courses Section */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* Course Box */
+.course {
+    text-align: center;
+    margin: 1rem;
+    width: 100%;
+    max-width: 300px; /* Limit width */
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom Effect on Image Hover */
+.course-image:hover {
+    transform: scale(1.05);
+}
+
+/* Course Text */
+.course-text {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white; /* Set default text color to white */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for text */
+.course-text:hover {
+    color: #2980b9; /* Changes text color to blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column; /* Stack courses vertically */
+        align-items: center;
+    }
+
+    .course {
+        width: 80%; /* Take up 80% of the screen width on small screens */
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-text {
+        font-size: 1rem; /* Smaller font on very small screens */
+    }
+}
+.button-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #5acd79;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
